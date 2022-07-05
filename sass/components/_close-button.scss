@@ -1,0 +1,22 @@
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 50%;
+  transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    border: 2px solid var(--accent-text-color);
+  }
+
+  &--position {
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+}

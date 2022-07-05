@@ -1,0 +1,51 @@
+.footer {
+  background-color: var(--secondary-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .container {
+    @include FlexCenter(flex, null, null);
+  }
+}
+
+.footer-soc {
+  margin-top: 12px;
+  margin-left: 70px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__list {
+    @include FlexCenter(flex, null, null);
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    @include FlexCenter;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-text-color);
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+}

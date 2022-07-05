@@ -1,0 +1,34 @@
+.soc-list {
+  @include FlexCenter(flex, center, null);
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @include FlexCenter;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-text-color);
+    }
+  }
+
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms var(--cubic-bezier);
+  }
+}
+
+.soc-list__link:hover .soc-list__icon,
+.soc-list__link:focus .soc-list__icon {
+  fill: #fff;
+}

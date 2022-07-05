@@ -1,0 +1,47 @@
+.nav-list {
+  @include FlexCenter(flex, null, null);
+  margin-left: 93px;
+  color: var(--secondary-text-color);
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &--current {
+      color: var(--accent-text-color);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -1px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-text-color);
+        border-radius: 2px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 50px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}

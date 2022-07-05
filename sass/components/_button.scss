@@ -1,0 +1,31 @@
+.btn {
+  @include FlexCenter;
+  min-width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--cubic-bezier);
+}
+
+.btn--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-modal {
+  margin-top: var(--typical-gap);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

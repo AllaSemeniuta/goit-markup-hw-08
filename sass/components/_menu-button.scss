@@ -1,0 +1,22 @@
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 998;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+.menu-button.is-open .menu-button__icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}

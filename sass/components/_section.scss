@@ -1,0 +1,17 @@
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desctop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.section--nopadding {
+  padding-top: 0;
+}
+
+.section--other-background {
+  background: #f5f4fa;
+}

@@ -1,0 +1,34 @@
+.contacts-list {
+  @include FlexCenter(flex, baseline, null);
+  margin-left: auto;
+
+  &__link {
+    @include FlexCenter($jc: baseline);
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--cubic-bezier);
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill 250ms var(--cubic-bezier);
+  }
+}
+
+.contacts-list__link:hover .contacts-list__icon,
+.contacts-list__link:focus .contacts-list__icon {
+  fill: var(--accent-text-color);
+}
