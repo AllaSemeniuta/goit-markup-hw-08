@@ -155,12 +155,26 @@ body {
 .section__title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   color: var(--secondary-text-color);
+  font-size: 28px;
+  line-height: 1.17;
 }
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .section__title--margin {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title--margin {
+    margin-bottom: 50px;
+  }
 }
 
 .btn {
@@ -730,6 +744,11 @@ body {
         flex-basis: calc((100% - 90px) / 4);
   }
 }
+@media screen and (max-width: 767px) {
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
+}
 .benefits__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,17 +825,40 @@ body {
   color: #ffffff;
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: calc(-1 * var(--typical-gap));
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .team__item {
-  -ms-flex-preferred-size: calc(25% - var(--typical-gap));
-      flex-basis: calc(25% - var(--typical-gap));
-  margin-right: var(--typical-gap);
   background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    margin-bottom: var(--typical-gap);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .team__wrap {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -825,7 +867,7 @@ body {
 }
 .team__box {
   padding-top: var(--typical-gap);
-  padding-bottom: var(--typical-gap);
+  padding-bottom: 24px;
 }
 .team__title {
   font-weight: 500;
@@ -841,11 +883,6 @@ body {
   margin-bottom: 16px;
 }
 
-.clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .clients__item {
   width: calc((100% - 150px) / 6);
   height: 92px;

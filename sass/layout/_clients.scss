@@ -1,5 +1,5 @@
 .clients {
-  @include FlexCenter(flex, null, null);
+  // @include FlexCenter(flex, null, null);
 
   &__item {
     width: calc((100% - 150px) / 6);

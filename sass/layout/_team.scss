@@ -1,11 +1,38 @@
 .team {
-  @include FlexCenter(flex, null, null);
-  margin-right: calc(-1 * var(--typical-gap));
+  @include tablet {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  // @include FlexCenter(flex, null, null);
+  // margin-right: calc(-1 * var(--typical-gap));
 
   &__item {
-    flex-basis: calc(100% / 4 - var(--typical-gap));
-    margin-right: var(--typical-gap);
+    // flex-basis: calc(100% / 4 - var(--typical-gap));
+    // margin-bottom: var(--typical-gap);
     background-color: #fff;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: var(--typical-gap);
+    }
+
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (max-width: 1199px) {
+      // margin-bottom: var(--typical-gap);
+    }
+    @include desctop {
+      // margin-right: var(--typical-gap);
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+
+  &__item:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 
   &__wrap {
@@ -16,7 +43,7 @@
 
   &__box {
     padding-top: var(--typical-gap);
-    padding-bottom: var(--typical-gap);
+    padding-bottom: 24px;
   }
 
   &__title {
