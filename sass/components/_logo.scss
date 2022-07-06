@@ -10,15 +10,10 @@
   }
   &--white {
     color: #ffffff;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 24px;
+      line-height: 1.16;
+    }
   }
-}
-
-.header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.footer__logo {
-  @include FlexCenter(inline-flex, null, null);
-  margin-bottom: 20px;
 }

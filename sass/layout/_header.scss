@@ -9,3 +9,8 @@
 .nav {
   @include FlexCenter(flex, null, center);
 }
+
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
