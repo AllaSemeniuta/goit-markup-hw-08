@@ -1,8 +1,11 @@
 .section--none {
-  @media screen and (max-width: 1199px) {
-    display: none;
+  display: none;
+
+  @include desctop {
+    display: block;
   }
 }
+
 .examples {
   @include FlexCenter(flex, null, null);
   margin-right: calc(-1 * var(--typical-gap));
