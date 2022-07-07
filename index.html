@@ -128,7 +128,22 @@
                 <div class="examples__wrap">
                   <h3 class="examples__subtitle">Десктопные приложения</h3>
                 </div>
-                <img src=".//images/box1.jpg" alt="верстка сайта" width="370" height="294"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/box1.webp    1x,
+                      ./images/examples/box1_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/examples/box1.jpg    1x,
+                      ./images/examples/box1_2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img src="./images/examples/box1.jpg" alt="верстка сайта" width="370" height="294"
               /></a>
             </li>
             <li class="examples__item">
@@ -136,16 +151,46 @@
                 <div class="examples__wrap">
                   <h3 class="examples__subtitle">Мобильные приложения</h3>
                 </div>
-                <img src=".//images/box2.jpg" alt="создание приложения" width="370" height="294"
-              /></a>
+                <picture>
+                   <source
+                    srcset="
+                      ./images/examples/box2.webp    1x,
+                      ./images/examples/box2_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/examples/box2.jpg    1x,
+                      ./images/examples/box2_2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img src="./images/examples/box2.jpg" alt="создание приложения" width="370" height="294" /></a>
+                </picture>
             </li>
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="examples__wrap">
                   <h3 class="examples__subtitle">Дизайнерские решения</h3>
                 </div>
-                <img src=".//images/box3.jpg" alt="цветовая палитра" width="370" height="294"
-              /></a>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/box3.webp    1x,
+                      ./images/examples/box3_2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/examples/box3.jpg    1x,
+                      ./images/examples/box3_2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img src="./images/box3.jpg" alt="цветовая палитра" width="370" height="294"/></a>
+                </picture>
             </li>
           </ul>
         </div>
@@ -160,11 +205,11 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/team/team_mobile1.webp    1x,
-                      ./images/team/team_mobile1_2x.webp 2x
+                      ./images/team/team_desctop1.webp    1x,
+                      ./images/team/team_desctop1_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -176,19 +221,19 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop1.webp    1x,
-                      ./images/team/team_desctop1_2x.webp 2x
+                      ./images/team/team_mobile1.webp    1x,
+                      ./images/team/team_mobile1_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./images/team/team_mobile1-min.jpg    1x,
-                      ./images/team/team_mobile1_2x-min.jpg 2x
+                      ./images/team/team_desctop1-min.jpg    1x,
+                      ./images/team/team_desctop1_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -200,16 +245,15 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop1-min.jpg    1x,
-                      ./images/team/team_desctop1_2x-min.jpg 2x
+                      ./images/team/team_mobile1-min.jpg    1x,
+                      ./images/team/team_mobile1_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
-
                   <img
                     class="team__photo"
-                    src="./images/team/team_mobile1-min.jpg"
+                    src="./images/team/team_desctop1-min.jpg"
                     alt="фотография Игоря Демьяненко"
                   />
                 </picture>
@@ -254,11 +298,11 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/team/team_mobile2.webp    1x,
-                      ./images/team/team_mobile2_2x.webp 2x
+                      ./images/team/team_desctop2.webp    1x,
+                      ./images/team/team_desctop2_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -270,19 +314,19 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop2.webp    1x,
-                      ./images/team/team_desctop2_2x.webp 2x
+                      ./images/team/team_mobile2.webp    1x,
+                      ./images/team/team_mobile2_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./images/team/team_mobile2-min.jpg    1x,
-                      ./images/team/team_mobile2_2x-min.jpg 2x
+                      ./images/team/team_desctop2-min.jpg    1x,
+                      ./images/team/team_desctop2_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -294,15 +338,15 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop2-min.jpg    1x,
-                      ./images/team/team_desctop2_2x-min.jpg 2x
+                      ./images/team/team_mobile2-min.jpg    1x,
+                      ./images/team/team_mobile2_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <img
                     class="team__photo"
-                    src="./images/team/team_mobile2-min.jpg"
+                    src="./images/team/team_desctop2-min.jpg"
                     alt="фотография Ольги Репиной"
                   />
                 </picture>
@@ -348,11 +392,11 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/team/team_mobile3.webp    1x,
-                      ./images/team/team_mobile3_2x.webp 2x
+                      ./images/team/team_desctop3.webp    1x,
+                      ./images/team/team_desctop3_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -364,19 +408,19 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop3.webp    1x,
-                      ./images/team/team_desctop3_2x.webp 2x
+                      ./images/team/team_mobile3.webp    1x,
+                      ./images/team/team_mobile3_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./images/team/team_mobile3-min.jpg    1x,
-                      ./images/team/team_mobile3_2x-min.jpg 2x
+                      ./images/team/team_desctop3-min.jpg    1x,
+                      ./images/team/team_desctop3_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -388,15 +432,15 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop3-min.jpg    1x,
-                      ./images/team/team_desctop3_2x-min.jpg 2x
+                      ./images/team/team_mobile3-min.jpg    1x,
+                      ./images/team/team_mobile3_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <img
                     class="team__photo"
-                    src="./images/team/team_mobile3-min.jpg"
+                    src="./images/team/team_desctop3-min.jpg"
                     alt="фотография Николая Тарасова"
                   />
                 </picture>
@@ -442,11 +486,11 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/team/team_mobile4.webp    1x,
-                      ./images/team/team_mobile4_2x.webp 2x
+                      ./images/team/team_desctop4.webp    1x,
+                      ./images/team/team_desctop4_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -458,19 +502,19 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop4.webp    1x,
-                      ./images/team/team_desctop4_2x.webp 2x
+                      ./images/team/team_mobile4.webp    1x,
+                      ./images/team/team_mobile4_2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./images/team/team_mobile4-min.jpg    1x,
-                      ./images/team/team_mobile4_2x-min.jpg 2x
+                      ./images/team/team_desctop4-min.jpg    1x,
+                      ./images/team/team_desctop4_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(max-width: 767px)"
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
@@ -482,15 +526,15 @@
                   />
                   <source
                     srcset="
-                      ./images/team/team_desctop4-min.jpg    1x,
-                      ./images/team/team_desctop4_2x-min.jpg 2x
+                      ./images/team/team_mobile4-min.jpg    1x,
+                      ./images/team/team_mobile4_2x-min.jpg 2x
                     "
                     type="image/jpg"
-                    media="(min-width: 1200px)"
+                    media="(max-width: 767px)"
                   />
                   <img
                     class="team__photo"
-                    src="./images/team/team_mobile4-min.jpg"
+                    src="./images/team/team_desctop4-min.jpg"
                     alt="фотография Михаила Ермакова"
                   />
                 </picture>
