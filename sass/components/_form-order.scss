@@ -3,9 +3,12 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--secondary-text-color);
+    @include desctop {
+      line-height: 1.15;
+    }
   }
 
   &__label {
@@ -71,9 +74,15 @@
   }
 
   &__text-policy {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+
     letter-spacing: 0.03em;
+
+    @include desctop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__link {
@@ -118,4 +127,3 @@
     background-color: var(--accent-text-color);
   }
 }
-
