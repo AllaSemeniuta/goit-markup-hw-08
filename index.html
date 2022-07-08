@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo header__logo link" href="">Web<span class="logo--black">Studio</span></a>
+          <a class="logo logo--margin header__logo link" href=""
+            >Web<span class="logo--black">Studio</span></a
+          >
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--current link" href="./index.html">Студия</a>
@@ -34,6 +36,19 @@
               <a class="nav-list__link link" href="#contact">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-button"
+            data-menu-button
+            aria-label="переключатель мобильного меню"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <svg width="40" height="40" class="menu-button__icon">
+              <use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
+              <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="contacts-list list">
           <li class="contacts-list__item">
@@ -53,8 +68,42 @@
             </a>
           </li>
         </ul>
+          <div class="menu" id="menu" data-menu>
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--current link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item">
+              <a href="tel:+380961111111" class="menu-contacts__link--accentcolor link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-soc list">
+            <li class="menu-soc__item"><a href="" class="menu-soc__link link">Instagram</a></li>
+            <li class="menu-soc__item"><a href="" class="menu-soc__link link">Twitter</a></li>
+            <li class="menu-soc__item"><a href="" class="menu-soc__link link">Facebook</a></li>
+            <li class="menu-soc__item"><a href="" class="menu-soc__link link">LinkedIn</a></li>
+          </ul>
+        </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Hero-->
       <section class="hero">
@@ -130,21 +179,21 @@
                 </div>
                 <picture>
                   <source
-                    srcset="
-                      ./images/examples/box1.webp    1x,
-                      ./images/examples/box1_2x.webp 2x
-                    "
+                    srcset="./images/examples/box1.webp 1x, ./images/examples/box1_2x.webp 2x"
                     type="image/webp"
                   />
                   <source
-                    srcset="
-                      ./images/examples/box1.jpg    1x,
-                      ./images/examples/box1_2x.jpg 2x
-                    "
+                    srcset="./images/examples/box1.jpg 1x, ./images/examples/box1_2x.jpg 2x"
                     type="image/jpg"
                   />
-                  <img src="./images/examples/box1.jpg" alt="верстка сайта" width="370" height="294"
-              /></a>
+                  <img
+                    src="./images/examples/box1.jpg"
+                    alt="верстка сайта"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+              </a>
             </li>
             <li class="examples__item">
               <a class="examples__link link" href="">
@@ -152,22 +201,22 @@
                   <h3 class="examples__subtitle">Мобильные приложения</h3>
                 </div>
                 <picture>
-                   <source
-                    srcset="
-                      ./images/examples/box2.webp    1x,
-                      ./images/examples/box2_2x.webp 2x
-                    "
+                  <source
+                    srcset="./images/examples/box2.webp 1x, ./images/examples/box2_2x.webp 2x"
                     type="image/webp"
                   />
                   <source
-                    srcset="
-                      ./images/examples/box2.jpg    1x,
-                      ./images/examples/box2_2x.jpg 2x
-                    "
+                    srcset="./images/examples/box2.jpg 1x, ./images/examples/box2_2x.jpg 2x"
                     type="image/jpg"
                   />
-                  <img src="./images/examples/box2.jpg" alt="создание приложения" width="370" height="294" /></a>
+                  <img
+                    src="./images/examples/box2.jpg"
+                    alt="создание приложения"
+                    width="370"
+                    height="294"
+                  />
                 </picture>
+              </a>
             </li>
             <li class="examples__item">
               <a class="examples__link link" href="">
@@ -176,21 +225,16 @@
                 </div>
                 <picture>
                   <source
-                    srcset="
-                      ./images/examples/box3.webp    1x,
-                      ./images/examples/box3_2x.webp 2x
-                    "
+                    srcset="./images/examples/box3.webp 1x, ./images/examples/box3_2x.webp 2x"
                     type="image/webp"
                   />
                   <source
-                    srcset="
-                      ./images/examples/box3.jpg    1x,
-                      ./images/examples/box3_2x.jpg 2x
-                    "
+                    srcset="./images/examples/box3.jpg 1x, ./images/examples/box3_2x.jpg 2x"
                     type="image/jpg"
                   />
-                  <img src="./images/box3.jpg" alt="цветовая палитра" width="370" height="294"/></a>
+                  <img src="./images/box3.jpg" alt="цветовая палитра" width="370" height="294" />
                 </picture>
+              </a>
             </li>
           </ul>
         </div>
@@ -753,5 +797,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

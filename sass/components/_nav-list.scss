@@ -1,7 +1,10 @@
 .nav-list {
-  @include FlexCenter(flex, null, null);
-  margin-left: 93px;
+  display: none;
   color: var(--secondary-text-color);
+
+  @include tablet {
+    @include FlexCenter(flex, null, null);
+  }
 
   &__link {
     display: block;

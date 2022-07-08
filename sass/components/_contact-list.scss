@@ -1,10 +1,15 @@
 .contacts-list {
-  @include FlexCenter(flex, baseline, null);
+  display: none;
   margin-left: auto;
 
+  @include tablet {
+    @include FlexCenter(flex, baseline, null);
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
   &__link {
     @include FlexCenter($jc: baseline);
-    margin-left: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
