@@ -88,9 +88,15 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--margin {
   margin-right: 0;
@@ -255,11 +261,11 @@ img {
   right: 0;
 }
 
-.menu {
+.mob-menu {
   display: none;
 }
 
-.menu.is-open {
+.mob-menu.is-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,9 +273,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -283,15 +289,13 @@ img {
   overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
-  .menu.is-open {
+  .mob-menu.is-open {
     display: none;
   }
 }
 
 .menu-list {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin-bottom: 50px;
 }
 .menu-list__item:not(:last-child) {
   margin-bottom: 32px;
@@ -302,6 +306,9 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.menu-list__link:hover, .menu-list__link:focus {
+  color: var(--accent-text-color);
 }
 .menu-list__link--current {
   color: var(--accent-text-color);
@@ -342,7 +349,7 @@ img {
   margin-left: -10px;
   margin-top: -15px;
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 450px) {
   .menu-soc {
     margin-left: 0;
     margin-top: 0;
@@ -362,7 +369,7 @@ img {
 .menu-soc__item:last-child {
   border-right: none;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 450px) {
   .menu-soc__item {
     margin-top: 0;
   }
@@ -760,7 +767,6 @@ img {
 }
 .nav-list__item {
   position: relative;
-  margin-right: 50px;
 }
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
@@ -813,8 +819,22 @@ img {
 .contacts-list {
   display: none;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
+  .contacts-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
   .contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -824,8 +844,18 @@ img {
             justify-content: baseline;
   }
 }
-.contacts-list__item:not(:first-child) {
-  margin-left: 50px;
+.contacts-list__item {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .contacts-list__link {
   display: -webkit-box;
@@ -838,25 +868,35 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   -webkit-transition: color 250ms var(--cubic-bezier);
   transition: color 250ms var(--cubic-bezier);
-  margin-right: 10px;
   fill: currentColor;
   -webkit-transition: fill 250ms var(--cubic-bezier);
   transition: fill 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-text-color);
 }
 .contacts-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
   -webkit-transition: fill 250ms var(--cubic-bezier);
   transition: fill 250ms var(--cubic-bezier);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__icon {
+    margin-right: 10px;
+  }
 }
 
 .contacts-list__link:hover .contacts-list__icon,

@@ -1,11 +1,11 @@
-.menu {
+.mob-menu {
   display: none;
 }
 
-.menu.is-open {
+.mob-menu.is-open {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
 }
 
 .menu-list {
-  flex-grow: 1;
+  margin-bottom: 50px;
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -36,6 +36,11 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
   }
 
   &__link--current {

@@ -42,7 +42,7 @@
             data-menu-button
             aria-label="переключатель мобильного меню"
             aria-expanded="false"
-            aria-controls="menu"
+            aria-controls="mob-menu"
           >
             <svg width="40" height="40" class="menu-button__icon">
               <use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
@@ -68,20 +68,21 @@
             </a>
           </li>
         </ul>
-          <div class="menu" id="menu" data-menu>
-          <ul class="menu-list list">
-            <li class="menu-list__item">
-              <a class="menu-list__link menu-list__link--current link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link link" href="#contact">Контакты</a>
-            </li>
-          </ul>
+          <div class="mob-menu" id="mob-menu" data-menu>
+              <ul class="menu-list list">
+                <li class="menu-list__item">
+                  <a class="menu-list__link menu-list__link--current link" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="menu-list__link link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+          <div class="mob-contact">
           <ul class="menu-contacts list">
             <li class="menu-contacts__item">
               <a href="tel:+380961111111" class="menu-contacts__link--accentcolor link">
@@ -100,6 +101,7 @@
             <li class="menu-soc__item"><a href="" class="menu-soc__link link">Facebook</a></li>
             <li class="menu-soc__item"><a href="" class="menu-soc__link link">LinkedIn</a></li>
           </ul>
+        </div>
         </div>
         </div>
       </div>
