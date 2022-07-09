@@ -18,11 +18,11 @@
       margin-bottom: 0;
     }
   }
-  &__item:not(:last-child) {
-    @include tablet {
-      margin-right: 30px;
-    }
-  }
+  // &__item:not(:last-child) {
+  //   @include tablet {
+  //     margin-right: 30px;
+  //   }
+
   &__link {
     @include FlexCenter($jc: baseline);
     font-weight: 500;

@@ -17,6 +17,7 @@
 
     @include tablet {
       flex-basis: calc((100% - 30px) / 2);
+      margin-bottom: 0;
     }
 
     @include desctop {
@@ -25,7 +26,10 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // display: block;
     transition: box-shadow 250ms var(--cubic-bezier);
 
     &:hover,
@@ -61,6 +65,7 @@
     transition: transform 250ms var(--cubic-bezier);
     top: 0;
     left: 0;
+    margin-top: 5px;
     @include FlexCenter;
     padding-left: 24px;
     padding-right: 24px;
@@ -75,6 +80,7 @@
     }
   }
   &__content {
+    flex-grow: 1;
     padding: 20px 24px;
     background: #ffffff;
     border-bottom: 1px solid #eeeeee;
@@ -100,4 +106,5 @@
 .card-set__link:hover .card-set__wrap::before,
 .card-set__link:hover .card-set__overlay {
   transform: translateY(0);
+  margin-top: 0;
 }
