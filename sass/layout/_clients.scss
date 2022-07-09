@@ -1,9 +1,9 @@
 .clients {
-  // @media screen and (max-width: 379px) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
+  @media screen and (max-width: 379px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 380px) and (max-width: 479px) {
     display: flex;
