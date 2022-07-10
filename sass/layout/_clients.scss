@@ -1,13 +1,13 @@
 .clients {
-  @media screen and (max-width: 379px) {
+  @media screen and (max-width: 359px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  @media screen and (min-width: 380px) and (max-width: 479px) {
+  @media screen and (min-width: 360px) and (max-width: 479px) {
     display: flex;
-    gap: 15px;
+    gap: 30px;
     flex-wrap: wrap;
   }
 
@@ -21,11 +21,11 @@
   &__item {
     height: 92px;
 
-    @media screen and (max-width: 379px) {
+    @media screen and (max-width: 359px) {
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 380px) and (max-width: 479px) {
-      flex-basis: calc((100% - 15px) / 2);
+    @media screen and (min-width: 360px) and (max-width: 479px) {
+      flex-basis: calc((100% - 30px) / 2);
     }
 
     @include mobile {
@@ -46,7 +46,7 @@
     }
 
     &__item:last-child {
-      @media screen and (max-width: 379px) {
+      @media screen and (max-width: 359px) {
         margin-bottom: 0;
       }
     }

@@ -18,10 +18,6 @@
       margin-bottom: 0;
     }
   }
-  // &__item:not(:last-child) {
-  //   @include tablet {
-  //     margin-right: 30px;
-  //   }
 
   &__link {
     @include FlexCenter($jc: baseline);
@@ -61,4 +57,10 @@
 .contacts-list__link:hover .contacts-list__icon,
 .contacts-list__link:focus .contacts-list__icon {
   fill: var(--accent-text-color);
+}
+
+.contacts-list__item:not(:last-child) {
+  @include desctop {
+    margin-right: 30px;
+  }
 }
